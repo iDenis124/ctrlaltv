@@ -11,7 +11,7 @@ Idk why you would want to, but you need [AHK](https://www.autohotkey.com/) insta
 
 ### Installing
 
-Run the setup
+Run the setup in the [releases](https://github.com/iDenis124/ctrlaltv/releases) tab
 
 ## Usage <a name = "usage"></a>
 
