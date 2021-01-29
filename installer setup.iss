@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Control Alt V"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.1.0"
 #define MyAppPublisher "Millie"
 #define MyAppURL "https://github.com/iDenis124/ctrlaltv"
 #define MyAppExeName "Control Alt V.exe"
@@ -13,7 +13,7 @@
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{A28210BD-E9E0-4738-ACD0-71C49F416369}
+AppId={{C1F1FD10-5775-4F4D-B466-C1EDAD4080C2}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
@@ -24,11 +24,12 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={autopf}\{#MyAppName}
 ChangesAssociations=yes
 DisableProgramGroupPage=yes
+LicenseFile=C:\Users\Millie\Documents\Programming\AHK\ctrlaltv\LICENSE
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 PrivilegesRequired=admin
-OutputDir=C:\Users\Millie\Documents\Programming\AHK\CtrlAltV\build
+OutputDir=C:\Users\Millie\Documents\Programming\AHK\ctrlaltv\build
 OutputBaseFilename=Control Alt V Setup
-SetupIconFile=C:\Users\Millie\Documents\Programming\AHK\CtrlAltV\icon.ico
+SetupIconFile=C:\Users\Millie\Documents\Programming\AHK\ctrlaltv\icon.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
@@ -40,7 +41,8 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\Millie\Documents\Programming\AHK\CtrlAltV\build\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Millie\Documents\Programming\AHK\ctrlaltv\build\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Millie\Documents\Programming\AHK\CtrlAltV\icon.ico"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]
